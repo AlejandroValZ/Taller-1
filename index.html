@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Página</title>
+    </head>
+    <body>
+        <img class="head_img" src="https://media-exp1.licdn.com/dms/image/C4D1BAQGAO9zvVhyAqQ/company-background_10000/0/1539806088038?e=2159024400&v=beta&t=5vq2-UBGsfB5RPQaOHqFEHtmdq47wFGYL27qOMblKwc">
+        <div class="navbar">
+            <a>Home</a>
+            <a>Espacio</a>
+            <a>Literatura</a>
+        </div>
+        <div class="contenidos">
+            <h1>¡Bienvenidos a mi blog!</h1>
+            <img class="ruiseñor" src="https://www.fundacionaquae.org/wp-content/uploads/2019/12/ruisenor-e1608301678210-1024x583.jpg.webp">
+        </div>
+        <div class="contenedor">
+            <div class="seccion_comentarios">
+                <div class="form">
+                    <h2>Comentarios</h2>
+                    <label class="required" for="input_comentario">Comentario:</label>
+                    <textarea id="input_comentario" class="texto input_comentario" cols="30" 
+                        rows="10" minlength="1" maxlength="200" required></textarea>
+                    <label class="required" for="input_usuario">Usuario:</label>
+                    <input type="text" id="input_usuario" class="texto input_usuario" 
+                        minlength="3" required>
+                    <button type="button" class="btn" onclick="addComment()">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor_comentarios">
+            <div id="comentarios"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
